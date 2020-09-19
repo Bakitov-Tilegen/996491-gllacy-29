@@ -1,0 +1,453 @@
+:root {
+    /*color*/
+  --background-email-color:#F8F7F4;  
+  --background-index1-color: #849d8f;
+  --background-button-grdient: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+  --background-button-shadow: box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
+  --general-color:#fff;
+  --second-color:#323232;
+    /*user-navigation-button*/
+  --background-user-button: rgba(255, 255, 255, 0.2);
+  --background-user-button-radius:20px; 
+  /*style*/
+  --list-style-no: none;
+  --button-border-radius:70px;
+
+  /*font-size*/
+  /* --xxs-font-size:13px;
+  --xs-font-size:14px;
+  --s-font-size:16px;
+  --m-font-size:18px;
+  --l-font-size:22px;
+  --xl-font-size:24px;
+  --xxl-font-size:35px;
+  --xxxl-font-size:60px; */
+}
+/*Global*/
+body {
+  margin:0;
+  background-color: var(--background-index1-color);
+  color: var(--general-color);
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+}
+.main-header {
+  margin: 0 25px;
+  width: 1200px;
+}
+.user-button {
+    color: var(--general-color);
+    background: var(--background-user-button);
+    border-radius: var(--background-user-button-radius);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px 15px 10px 45px;
+    cursor: pointer;
+  }
+.button {
+  color: var(--general-color);
+  background: var(--background-button-grdient);
+  box-shadow: var(--background-button-shadow);
+  border-radius:var(--button-border-radius);
+  cursor: pointer;
+}
+.link{
+  cursor: pointer;
+  color: var(--general-color);    
+}
+/*Global css end*/
+
+/*header*/
+.header-nav {
+  display: flex;
+}
+.nav-list {
+  list-style: var(--list-style-no); 
+  display: flex;
+  padding: 0;
+}
+.nav-item {
+  font-size: 16px;
+  line-height: 18px;  
+  margin: 0 30px 0 0; 
+}
+
+.schedule-time {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;   
+}
+.schedule-phone {
+  text-decoration: none;  
+  font-style: 700;
+  font-size: 22px;
+  line-height: 24px;
+}
+
+/*main*/
+.slider-wrapper {
+  width: 1200px;
+  padding: 0 30px ;
+}
+.slider-title {
+  margin: 0 0 25px 0;
+  font-style: 700;
+  font-size: 60px;
+  line-height: 60px;   
+  width: 670px;
+  min-height: 120px;
+}
+
+.main-button {
+  margin: 0;  
+  width: 280px;
+  min-height: 65px;  
+  /* padding: 10px 40px; */
+  font-style: 700;
+  font-size: 32px;
+  line-height: 44px;
+  margin: 0 0 55px 0;
+}
+/* .main-index {
+  margin: 0 25px;
+} */
+/*Малина и Шоколадки*/
+.banner-wrapper { 
+  display: flex;
+  width: 1200px;
+  margin: 0 0 40px 0;
+}
+
+.raspberry {
+  width: 560px;
+  min-height: 230px;
+  border-radius: 16px;
+  background-color:#B30A3E;
+  background-image: url(../img/main/raspberry-background.png); 
+  background-size: cover;
+  margin: 0 25px 0 25px;  
+  padding: 15px 0 0 15px; 
+  
+}
+.raspberry-title {
+  margin: 0 0 15px 0;
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+}
+.raspberry-text {
+  margin: 0 0 40px 0 ;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700; 
+}
+.chocolate {
+    width: 560px;
+    min-height: 230px;
+    border-radius: 16px;
+    background-color:#43220F;
+    background-image: url(../img/main/chocolate-background.png); 
+    background-size: cover; 
+    margin: 0 0 0 25px; 
+    padding: 15px 0 0 15px; 
+}
+.chocolate-title {
+    margin: 0 0 15px 0;
+    font-size: 35px;
+    line-height: 41px;
+    font-weight: 700;    
+}
+.chocolate-text {
+    margin: 0 0 40px 0 ;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;    
+}
+.button-need {
+  /* width: 165px;
+  min-height: 50px; */
+  font-size: 18px;
+  line-height: 24px;
+  padding: 10px 20px;
+  box-sizing: content-box;
+}
+/*Список мороженого*/
+.ice-hit-wrapper {  
+  width: 1200px;
+  margin: 0 0 40px 0;
+}
+
+.hit-list {
+  width: 1200px;
+  padding: 0;
+  margin: 0;
+  list-style: var(--list-style-no);
+  display: flex;
+}
+.hit-item {
+
+}
+.hit-price {
+  margin: 0;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 45px;
+}
+.kg-text {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35px;
+}
+.hit-description {
+  margin: 0;
+  width: 265px;
+  min-height: 45px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: center;
+}
+/*CEO Pattern*/
+.ceo-wrapper {
+  color: var(--second-color) ;  
+  background-color: #EBE1C6;  
+  background-image: url(../img/main/wafer-background.png);
+  background-size: cover;
+  width: 1145px;
+  min-height: 305px;
+  padding: 25px 25px 0 25px;
+  margin: 0 0 45px 0;
+}
+.ceo-title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  margin: 0 0 20px 0;
+
+}
+.ceo-text-wrapper {
+  position: relative;
+}
+.ceo-text-left {
+  margin: 0 0 35px 0;
+  width: 50%;
+  float: left;
+  line-height: 22px;
+}
+.ceo-text-right {
+  margin: 0 0 35px 0;
+  width: 50%;
+  float: right;
+  line-height: 22px;
+}
+
+.news-email-wrapper {
+  display: flex;
+  margin: 0 0 40px 0;
+  width: 1200px;
+}
+/*News*/
+.news-wrapper {
+  background: var(--general-color);
+  background-image: url(../img/main/Strawberry-background.png);
+  background-size: cover;
+  width: 560px;
+  min-height: 220px;
+  padding: 20px;
+  cursor: pointer;
+  margin: 0 30px 0 0;
+}
+.news-text {
+  color: var(--second-color);
+
+}
+.news-title {
+  font-size: 24px;
+  line-height: 30px;
+  color:var(--second-color);
+  width: 290px;
+  min-height: 75px;
+  margin: 15px 0 0 0;
+}
+/*email*/
+.email-wrapper {
+  width: 548px;
+  min-height: 210px;
+  background-color: var(--background-email-color);
+  color: var(--second-color);
+  padding: 30px 15px 30px 20px;
+  line-height: 22px;
+}
+.label-email {
+  margin: 0 0 50px 0;
+  display: inline-block;
+}
+.input-email {
+  width: 370px;
+  height: 45px;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.email-button {
+  padding: 15px 20px;
+}
+
+/*footer*/
+.main-footer {
+  width: 1200px;
+  color: var(--second-color);
+  display: flex;
+  justify-content: space-between;
+}
+.social-wrapper {
+  padding: 0 30px ;
+}
+.social-list {
+  list-style: var(--list-style-no);
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+}
+.social-item {
+  margin: 0 10px 0 0;
+}
+.about-us-list {
+  list-style: var(--list-style-no);
+  margin: 0;
+  padding: 0;
+}
+.about-us-item {
+  margin: 0 0 10px 0;
+}
+.about-us-item-left {
+
+}
+.about-us-item-right {
+
+}
+.coopyright-make {
+    display: block;
+}
+/*------------------------------------------------------CATALOG*/
+/*Хлебные крошки*/
+.breadcrumbs-list {
+  width: 550px;
+  list-style: var(--list-style-no);
+  display: flex; 
+  padding: 0 30px;
+  margin: 0;
+}
+.breadcrumbs-item {
+  margin: 0 20px 10px 0;
+}
+.breadcrumbs-link {
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--general-color);
+  text-decoration: none;
+}
+
+.catalog-title {
+  width: 385px;
+  font-size: 35px;
+  line-height: 41px;
+  margin: 0 0 30px 0;
+  padding: 0 30px;
+}
+/*Форма*/
+.head-sort-wrapper {
+  display: flex;
+  padding: 0 30px;
+  margin: 0 0 15px 0;
+}
+.sort-wrapper {
+  margin: 0 15px 0 0;
+}
+/*global*/
+.sort-catalog-text {
+  margin: 0 0 7px 0;
+}
+
+.sort-select {
+  width: 200px;
+}
+.price-wrapper {
+  width: 220px;
+  margin: 0 15px 0 0;
+}
+.price-input-catalog {
+  width: 220px;
+}
+.fat-wrapper {
+  
+}
+.toppings-text {
+  
+}
+.toppings-wrapper {
+  padding: 0 30px;
+  width: 750px;
+  margin: 0 0 40px 0;
+}
+.toppings-wrapper input {
+  padding: 0 10px 0 0;
+}
+.toppings-wrapper label {
+  padding: 0 10px 0 0;
+}
+.toppings-wrapper .user-button {
+  padding-left:15px;
+  border-color: var(--general-color);
+  width: 145px;
+}
+/*Список Продукций*/
+.product-list-wrapper {
+  padding: 0 30px;
+}
+.product-list {
+  padding: 0;
+  margin: 0 0 110px 0;
+  list-style: var(--list-style-no);
+  display: flex;
+  width: 1200px;
+  flex-wrap: wrap;
+
+}
+.product-item {
+  margin: 0 25px 0 0;
+}
+.product-text {
+  width: 265px;
+}
+/*Страницы*/
+.page-catalog {
+  padding: 0 30px;
+}
+.page-list {
+  width: 1200px;   
+  margin: 0 0 40px 0;  
+  padding: 0;
+  list-style: var(--list-style-no);
+  display: flex;
+  justify-content: flex-end;
+}
+.page-item a {
+  color:var(--general-color);
+  text-decoration: none;
+  margin: 0 20px 0 0;
+}
+.active {
+  background: var(--general-color);
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  margin: 0 20px 0 0;
+
+}
+/*как мне здесь центрировать текст */
+.active a {
+ color: var(--second-color);
+  padding: 7px 7px 7px 7px;
+}
