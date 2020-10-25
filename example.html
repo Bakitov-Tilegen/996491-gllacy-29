@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  <div class="map" id="map"></div>
+  
+  
+    <script>
+      function initMap() {
+    let opt = {
+        center:{lat:59.938769, lng:30.323045 },
+        zoom:4
+    }
+    let map = new google.maps.Map(document.getElementById('map'), opt);
+}</script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYzvigvy85YhhfJjuEuIQm0ZAQzRT3dAg&callback=initMap" async defer></script>
+    
+</body>
+</html>
