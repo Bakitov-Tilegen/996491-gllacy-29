@@ -118,7 +118,8 @@
             </button>
             <!-- Pop up -->
             <div class="basket-cite--wrapper">
-              <table class="basket-table">
+
+              <table class="basket-table" cellspacing="0">
                 <tr class="basket-table--row">
                   <td class="basket-table--data data-name orange">
                     пломбир с апельсиновым джемом
@@ -133,8 +134,9 @@
                   <td class="basket-table--data">1,5 кг х 300 руб.</td>
                   <td class="basket-table--data">450 руб.</td>
                 </tr>
-                <td colspan="15" class="table-price">Итого: 750 руб.</td>
+                
               </table>
+              <h4 class="table-price">Итого: 750 руб.</h4>
               <button type="button" class="button basket-button">
                 Оформить заказ
               </button>
@@ -307,7 +309,7 @@
             </article>
           </article>
           <section class="email-wrapper">
-            <form action="post" method="POST">
+            <form class="email-form" action="post" method="POST">
               <label class="label-email" for="email"
                 >Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе
                 всего самого вкусного, что у нас происходит. Обещаем не спамить
@@ -551,7 +553,7 @@
             />
           </svg>
         </a>
-        <span class="coopyright-make">Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> © 2019</span>
+        <span class="coopyright-make">Сделано в <a class="coopyright-make-link link" href="https://htmlacademy.ru/">HTML Academy</a> © 2019</span>
       </section>
     </footer>
     <script src="./js/apiMaps.js"></script>

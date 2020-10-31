@@ -24,17 +24,24 @@
 
 // });
 
+
+
 function initMap() {
     let pos = {lat:59.938769, lng:30.323045 };
     let opt = {
         center:pos,
-        zoom:20,
-    }
-    let myMap = new google.maps.Map(document.getElementById('map'), opt);
-}
+        zoom:16,
+    };
+    let image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
+     myMap = new google.maps.Map(document.getElementById('map'), opt);
 
-// let marker = new google.maps.Marker({
-//   position: pos,
-//   map:myMap, 
-//   title:"You hover me"
-// });
+    let marker = new google.maps.Marker({
+        position: pos,
+        map:myMap, 
+        title:"You hover me",
+        // icon:image,
+        icon:'map-icecream.png',
+        // icon: '../img/main/map-icecream.png', NOT WORK
+      });
+    
+}
